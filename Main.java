@@ -1,30 +1,23 @@
 import java.util.Scanner;
-public class ScalerAssignments
+public class Main
 {
     public static void main(String[] args)
     {
 
        Scanner sc = new Scanner(System.in);
-       int N = sc.nextInt();
+       int T = sc.nextInt();
 
-//        /*   WHILE LOOP  */
+//        /*  FOR LOOP  */
 
-        int oddIndexSum = 0;
-        int evenIndexSum = 0;
-//      calculating the index digit from right to left
-        int index = 1;
-        while (N>0) {
-            int ld = N % 10;
-            N/=10;
-            if (index % 2 == 0) {
-                evenIndexSum += ld;
+        for (int i = 1; i <= T ; i++) {
+            int N = sc.nextInt();
+            int ld = 0;
+            int fd = 0;
+            ld = N%10;
+            for (; N > 0 ; N/=10) {
+                fd = N%10;
             }
-            else {
-                oddIndexSum += ld;
-            }
-            index++;
+            System.out.println(fd+" "+ld);
         }
-        System.out.println("Sum of Odd Index Digit : " + oddIndexSum);
-        System.out.println("Sum of Even Index Digit : " + evenIndexSum);
     }
 }
