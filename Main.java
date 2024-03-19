@@ -10,7 +10,7 @@ public class Main
 //        /*  FOR LOOP  */
 
 //      (My method)
-        for (int i = 1; i <= N ; i++) {
+        for (int i = N; i >= 1 ; i--) {
             System.out.print(i + " ");
         }
     }
