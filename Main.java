@@ -10,14 +10,8 @@ public class Main
 //        /*  FOR LOOP  */
 
 //      (My method)
-        for (int i = 1; i*4 <= N ; i++) {
-            System.out.print(i*4 + " ");
-        }
-
-//      (Scaler method)
         for (int i = 1; i <= N ; i++) {
-            if (i%4==0)
-                System.out.print(i + " ");
+            System.out.print(i + " ");
         }
     }
 }
