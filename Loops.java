@@ -274,7 +274,7 @@
                               
                               
                               
-// IS IT PRIME? (23-03-2024) [for loop-2 Assignmennt problems 2]
+// IS IT PRIME? (23-03-2024) [for loop-2 Assignment problems 2]
                               
                               
 // import java.util.Scanner;
@@ -301,4 +301,96 @@
 //             System.out.println("NO");
 //         }
 //     }
-// }                              
+// }
+
+
+
+// IS IT PERFECT? (24-03-2024) [for loop-2 Assignment problems 3]      
+
+
+// import java.util.Scanner;
+// public class ScalerAssignments
+// {
+//     public static void main(String[] args)
+//     {
+
+//        Scanner sc = new Scanner(System.in);
+//        int T = sc.nextInt();
+
+// //        /*  FOR LOOP  */
+
+//         for (int i = T; i > 0; i--) {
+//             int N = sc.nextInt();
+//             int sumDivisors = 0;
+//             for (int j = 1; j <= N/2 ; j++) {
+//                 if (N%j==0) {
+//                     sumDivisors+=j;
+//                 }
+//             }
+//             if (sumDivisors==N) {
+//                 System.out.println("Yes");
+//             }
+//             else {
+//                 System.out.println("No");
+//             }
+//         }
+//     }
+// }
+
+
+
+// SUM OF ODDS (24-03-2024) [for loop-2 Assignment problems 4]                                   
+
+                                   
+// import java.util.Scanner;
+// public class ScalerAssignments
+// {
+//     public static void main(String[] args)
+//     {
+
+//        Scanner sc = new Scanner(System.in);
+//        int A = sc.nextInt();
+
+// //        /*  FOR LOOP  */
+
+//         int oddSum = 0;
+//         for (int i = 1; i <= A; i++) {
+//             if (i%2!=0) {
+//                 oddSum+=i;
+//             }
+//         }
+//         System.out.println(oddSum);
+//     }
+// }
+
+
+
+// PRINT THE PRIMES (25-03-2024) [for loop-2 Additional problems 1]      
+            
+ 
+// import java.util.Scanner;
+// public class ScalerAssignments
+// {
+//     public static void main(String[] args)
+//     {
+
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
+
+// //        /*  FOR LOOP  */
+
+//         for (int i = 2; i <= N ; i++) {
+//             int count = 0;
+// //            for (int j = 2; j <= i-1; j++) 
+//             for (int j = 2; j <= Math.sqrt(i) ; j++) {
+//                 if (i%j==0) {
+//                     count++;
+//                     break;
+//                 }
+//             }
+//             if (count==0) {
+//                 System.out.println(i);
+//             }
+//         }
+//     }
+// }
